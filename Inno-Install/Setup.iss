@@ -5,7 +5,7 @@
 #define MyAppVersion "2.2.1"
 #define MyAppPublisher "Charles Knell"
 #define MyAppURL "http://charlesknell.net"
-#define MyAppExeName "Folder Display 2.2.exe"
+#define MyAppExeName "folder_display_2.2.1.exe"
 #define MyAppAssocName MyAppName + " File"
 #define MyAppAssocExt ".exe"
 #define MyAppAssocKey StringChange(MyAppAssocName, " ", "") + MyAppAssocExt
@@ -27,8 +27,8 @@ ChangesAssociations=yes
 DisableProgramGroupPage=yes
 ; Uncomment the following line to run in non administrative install mode (install for current user only.)
 ;PrivilegesRequired=lowest
-OutputDir="C:\Users\charl\OneDrive\Desktop\Folder Display\Inno-Install"
-OutputBaseFilename=SetupFolderDisplay2.2
+OutputDir="C:\Users\charl\PYTHON\Folder-Display\Inno-Install"
+OutputBaseFilename=SetupFolderDisplay2.2.1
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
@@ -40,8 +40,8 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
 
 [Files]
-Source: "C:\Users\charl\OneDrive\Desktop\Folder Display\dist\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\charl\OneDrive\Desktop\Folder Display\Inno-Install\Icon-Favicon\{#MyAppIcoName}" ; DestDir: "{app}"
+Source: "C:\Users\charl\PYTHON\Folder-Display\dist\{#MyAppExeName}"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\charl\PYTHON\Folder-Display\Inno-Install\Icon-Favicon\{#MyAppIcoName}" ; DestDir: "{app}"
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Registry]
